@@ -32,12 +32,12 @@ public class Main {
                 bookMap.put(book.getId(), book);
             }
         }
-        System.out.println("Enter Book ID ");
+        System.out.println("Enter the book ID to see its information ");
         Scanner in = new Scanner(System.in);
         String ID = in.nextLine().trim();
-        Book target = bookMap.get(ID);
-        if (target != null) {
-            System.out.println(target.toString());
+        Book book = bookMap.get(ID);
+        if (book != null) {
+            System.out.println(book.toString());
         } else {
             System.out.println("try again");
         }
